@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MM Lampadari</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+<body>
+<div class="header">
+    <!-- Trigger/Open The Modal -->
+    <button class="header-button" id="myBtn">
+        Area riservata
+        <img class="header__padlock" src="assets/padlock.png" alt="padlock">
+    </button>
+
+    <img class="header__logo" src="./assets/logo.png" alt="MM Lampadari logo">
+    <div class="menu">
+        <button class="header__home">Home</button>
+        <div class="dropdown">
+            <button class="dropbtn">Azienda</button>
+            <div class="dropdown-content">
+                <a href="#">storia</a>
+                <a href="#">mm design</a>
+                <a href="#">designer</a>
+                <a href="#">sertificazioni</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Collezioni</button>
+            <div class="dropdown-content">
+                <a href="#">storia</a>
+                <a href="#">mm design</a>
+                <a href="#">designer</a>
+                <a href="#">sertificazioni</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">News</button>
+            <div class="dropdown-content">
+                <a href="#">storia</a>
+                <a href="#">mm design</a>
+                <a href="#">designer</a>
+                <a href="#">sertificazioni</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Contatti</button>
+            <div class="dropdown-content">
+                <a href="#">storia</a>
+                <a href="#">mm design</a>
+                <a href="#">designer</a>
+                <a href="#">sertificazioni</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner__message">
+        <h1 class="banner__header">Lampadari contemporanei</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+    </div>
+    <div class="banner__overflow banner__overflow--hidden">
+        <button class="banner__overflow-trigger" onclick="toggleClass()"><i class="arrow"></i></button>
+        <div class="banner__overflow__1">
+            <h2 class="banner__overflow--header">Stai pensando ad un progetto?</h2>
+            <p class="banner__overflow--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor dolore</p>
+            <p class="banner__overflow-link"><a href="">Approfondisci</a></p>
+        </div>
+        <div class="banner__overflow__2">
+            <h2 class="banner__overflow--header">Vi aspettiamo alla fiera Euroluce</h2>
+            <p class="banner__overflow--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor dolore</p>
+            <p class="banner__overflow-link"><a href="">Approfondisci</a></p>
+        </div>
+        <div class="banner__overflow__3">
+            <h2 class="banner__overflow--header">Scopri la nuova collezione</h2>
+            <p class="banner__overflow--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor dolore</p>
+            <p class="banner__overflow-link"><a href="">Approfondisci</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer__row">
+        <div class="footer__item">
+            <h3>Lampadari made in italy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea</p>
+        </div>
+        <div class="footer__item">
+            <h3>lampadari artigianali</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea</p>
+        </div>
+        <div class="footer__item">
+            <h3>45 anni di esperienza</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea</p>
+        </div>
+        <div class="footer__item">
+            <h3>NEWSLETTER</h3>
+            <form>
+                <p><input class="footer__input" placeholder="Nome e Cognome"></p>
+            </form>
+            <form>
+                <p><input class="footer__input" placeholder="Email"></p>
+            </form>
+            <div>
+                <input class="footer__checkbox" type="checkbox" id="check" name="Acconsento al trattamento dei dati">
+                <label class="footer__checkbox"  for="check">Acconsento al trattamento dei dati</label>
+            </div>
+            <button class="footer__button">Iscriviti</button>
+        </div>
+    </div>
+    <div class="footer__row--last">
+        <p class="footer__contact">
+            <span>MMLAMPADARI srl</span>
+            <span>Via Feltrina 00</span>
+            <span>31111 Pederobba  (TV)</span>
+            <span>0423.123456</span>
+            <span>info@mmlampadari.mm</span>
+            <span>P.IVA 04123456789</span>
+        </p>
+        <p class="footer__contact">
+            <img class="footer__social" src="./assets/facebook.png" alt="facebook">
+            <img class="footer__social" src="./assets/insta.png" alt="insta">
+            <img class="footer__social" src="./assets/po.png" alt="po">
+        </p>
+        <p>
+            <span>ITA |</span>
+            <span>ENG |</span>
+            <span>DEU |</span>
+            <span>РУС</span>
+        </p>
+    </div>
+
+</div>
+
+
+<script>
+    function toggleClass() {
+        const element = document.getElementsByClassName('banner__overflow')[0];
+        element.classList.toggle('banner__overflow--hidden')
+    }
+</script>
+
+
+<script>
+    const modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    const btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Lampadari modal window</p>
+    </div>
+</div>
+</body>
+</html>
